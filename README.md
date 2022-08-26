@@ -63,7 +63,9 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
                        random_state=12345, splitter='best')`
 ```
 ### Quantitative Analysis
-* **Metrics used for evaluation**: Area Under the Curve and Adverse Impact Ratio
+* **Metrics used for evaluation**: Area Under the Curve and Adverse Impact Ratio: Adverse Impact Ratio(AIR) is the rate of positive outcome for a protected group divided by that of the controlled group . An AIR of below 0.8 is a major problem.    To calculate AIR, define the function AIR and return value. For the final model Area Under the Curve, 
+
+
 
 #### Correlation Heatmap
 ![Correlation Heatmap](download.png)
