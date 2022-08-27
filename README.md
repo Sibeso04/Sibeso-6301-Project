@@ -68,7 +68,7 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 
 
 #### Correlation Heatmap
-![Correlation Heatmap]([Correlation Heatmap.png](https://github.com/Sibeso04/Sibeso-6301-Project/blob/main/Correlation%20Heatmap.png))
+![Correlation Heatmap](https://github.com/Sibeso04/Sibeso-6301-Project/blob/main/Correlation%20Heatmap.png)
 
 #### Iteration Plot Final Model
 ![Iteration Plot.png](Iteration Plot.png)
