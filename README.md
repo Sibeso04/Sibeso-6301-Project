@@ -54,18 +54,6 @@
 * **Software used to implement the model**: Python, scikit-learn
 * **Version of the modeling software**: 0.22.2.post1
 * **Hyperparameters or other settings of your model**: 
- '{'ccp_alpha': 0.0,
- 'class_weight': None,
- 'criterion': 'gini',
- 'max_depth': 6,
- 'max_features': None,
- 'max_leaf_nodes': None,
- 'min_impurity_decrease': 0.0,
- 'min_samples_leaf': 1,
- 'min_samples_split': 2,
- 'min_weight_fraction_leaf': 0.0,
- 'random_state': 12345,
- 'splitter': 'best'}'
 ```
 DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
                        max_depth=6, max_features=None, max_leaf_nodes=None,
@@ -75,9 +63,15 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
                        random_state=12345, splitter='best')`
 ```
 ### Quantitative Analysis
-* **Metrics used for evaluation**: Area Under the Curve and Adverse Impact Ratio: Adverse Impact Ratio(AIR) is the rate of positive outcome for a protected group divided by that of the controlled group . An AIR of below 0.8 is a major problem.    To calculate AIR, define the function AIR and return value. For the final model Area Under the Curve, 
+* **Metrics used for evaluation**: 
+* Area Under the Curve (AUC) and Adverse Impact Ratio(AIR) are metrics used for evaluation.
+* Adverse Impact Ratio(AIR) is the rate of positive outcome for a protected group. The standard AIR is 0.8 or 80%. An AIR of below 0.8 is a major problem.  To calculate AIR, define the function AIR and return value in. For the first model, the AIR of hispanic to white in the race group is 0.76 at a cutoff of 0.15. This is below the standard value so we raise the cutoff to 0.18 and get an AIR of 0.83 which is acceptable.
+* AUC is used to measure discrimination or bias in the model. An AUC of 0.80 is acceptable and anything above that is excellent. In the final model, the Hispanic to White AUC maxes out at a depth of about 7 which shows an AUC of above 0.80 which is acceptable and means the model exhibits high accuracy.
 
-
+|  | Training Data  | Validation Data| Test Data|
+| ---- | ------------- | ---------------- | ---------- |
+|**AIR**| 0.87 | 0.76| 0.83 |
+| **AUC** | 0.87| 0.74 | 0.84
 
 #### Correlation Heatmap
 ![Correlation Heatmap](https://github.com/Sibeso04/Sibeso-6301-Project/blob/main/Correlation%20Heatmap.png)
