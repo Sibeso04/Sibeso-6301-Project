@@ -67,7 +67,7 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 * **Metrics used for evaluation**: 
 * Area Under the Curve (AUC) and Adverse Impact Ratio(AIR) are metrics used for evaluation.
 * Adverse Impact Ratio(AIR) is the rate of positive outcome for a protected group. The standard AIR is 0.8 or 80%. An AIR of below 0.8 is a major problem.  To calculate AIR, define the function AIR and return value in. For the first model, the AIR of hispanic to white in the race group is 0.76 at a cutoff of 0.15. This is below the standard value so we raise the cutoff to 0.18 and get an AIR of 0.83 which is acceptable.
-* AUC is used to measure discrimination or bias in the model. An AUC of 0.80 is acceptable and anything above that is excellent. In the final model, the Hispanic to White AUC maxes out at a depth of about 7 which shows an AUC of above 0.80 which is acceptable and means the model exhibits high accuracy.
+* AUC is used to measure discrimination or bias in the model. An AUC of 0.80 is acceptable and anything above that is excellent. In the final model, the Hispanic to White AUC(the testing data) maxes out at a depth of about 7 which shows an AUC of about 0.84 which is acceptable and means the model exhibits high accuracy.
 
 |  | Training Data  | Validation Data| Test Data|
 | ---- | ------------- | ---------------- | ---------- |
