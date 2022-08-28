@@ -83,4 +83,5 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 ![Iteration Plot.png](https://github.com/Sibeso04/Sibeso-6301-Project/blob/main/Iteration%20Plot.png)
 
 ### Ethical Considerations
+* Model may incur some bias or discrimination from training data due to pattern of dependency on past outcomes. For the human's credit limit balances to be determined,the training model refers to data from the past which may cause group biases. There may be group disparities due to past outcomes. 
 
