@@ -71,7 +71,7 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 |  | Training Data  | Validation Data| Test Data|
 | ---- | ------------- | ---------------- | ---------- |
 |**AIR**| 0.87 | 0.76| 0.83 |
-| **AUC** | 0.87| 0.74 | 0.84
+| **AUC(At depth of 6)** | 0.78| 0.75 | 0.84
 
 #### Correlation Heatmap
 ![Correlation Heatmap](https://github.com/Sibeso04/Sibeso-6301-Project/blob/main/Correlation%20Heatmap.png)
@@ -83,5 +83,7 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 ![Iteration Plot.png](https://github.com/Sibeso04/Sibeso-6301-Project/blob/main/Iteration%20Plot.png)
 
 ### Ethical Considerations
-* Model may incur some bias or discrimination from training data due to pattern of dependency on past outcomes. For the human's credit limit balances to be determined,the training model refers to data from the past which may cause group biases. There may be group disparities due to past outcomes. 
+* Model may incur some bias or discrimination from training data due to pattern of dependency on past outcomes. For the human's credit limit balances to be determined,the training model refers to data from the past which may cause group biases. There may be group disparities due to past outcomes and this may lead to negative impacts on a group.
+*It was unexpected for the model not to have any missing values in the data needed for training the model. 
+*Another unexpected thing was for the model to produce the Women to Men AIR it did both in the validation and test data. Because of this, we can see that human minds already have certain notions that may affect the machine algorithm and lead to bias and discrimination.
 
