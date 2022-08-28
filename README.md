@@ -63,6 +63,7 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
                        random_state=12345, splitter='best')`
 ```
 ### Quantitative Analysis
+
 * **Metrics used for evaluation**: 
 * Area Under the Curve (AUC) and Adverse Impact Ratio(AIR) are metrics used for evaluation.
 * Adverse Impact Ratio(AIR) is the rate of positive outcome for a protected group. The standard AIR is 0.8 or 80%. An AIR of below 0.8 is a major problem.  To calculate AIR, define the function AIR and return value in. For the first model, the AIR of hispanic to white in the race group is 0.76 at a cutoff of 0.15. This is below the standard value so we raise the cutoff to 0.18 and get an AIR of 0.83 which is acceptable.
@@ -83,7 +84,10 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 ![Iteration Plot.png](https://github.com/Sibeso04/Sibeso-6301-Project/blob/main/Iteration%20Plot.png)
 
 ### Ethical Considerations
+
 * Model may incur some bias or discrimination from training data due to pattern of dependency on past outcomes. To determine whether a customer's next payment is deliquent, the training model refers to data from the past which may cause group biases. There may be group disparities due to past outcomes and this may lead to negative impacts on a group e.g., race bias or gender bias.
+
+* Real-word risks of using the model involve hackers or security and privacy issues that may arise. It is possible that hackers may alter the algorithm and change data which may lead to discriminstation. 
 
 * It was unexpected for the model not to have any missing values in the data needed for training the model. 
 * Another unexpected thing was for the model to produce the Women to Men AIR it did both in the validation and test data. Because of this, we can see that human minds already have certain notions that may affect the machine algorithm and lead to bias and discrimination.
