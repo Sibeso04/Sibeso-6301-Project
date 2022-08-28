@@ -83,7 +83,7 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 ![Correlation Heatmap](https://github.com/Sibeso04/Sibeso-6301-Project/blob/main/Correlation%20Heatmap.png)
 
 ### Decision Tree
-![Decision Tree]([https://github.com/Sibeso04/Sibeso-6301-Project/blob/main/Iteration%20Plot.png](https://github.com/Sibeso04/Sibeso-6301-Project/blob/main/Decision%20Tree%20.png))
+![Decision Tree](https://github.com/Sibeso04/Sibeso-6301-Project/blob/main/Decision%20Tree%20.png)
 
 #### Iteration Plot Final Model
 ![Iteration Plot.png](https://github.com/Sibeso04/Sibeso-6301-Project/blob/main/Iteration%20Plot.png)
