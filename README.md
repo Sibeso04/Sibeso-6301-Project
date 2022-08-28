@@ -85,10 +85,8 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 
 ### Ethical Considerations
 
+**Risks and Uncertainties:**
 * Model may incur some bias or discrimination from training data due to pattern of dependency on past outcomes. To determine whether a customer's next payment is deliquent, the training model refers to data from the past which may cause group biases. There may be group disparities due to past outcomes and this may lead to negative impacts on a group e.g., race bias or gender bias.
-
 * Real-word risks of using the model involve hackers or security and privacy issues that may arise. It is possible that hackers may alter the algorithm and change data which may lead to discriminstation. 
-
-* It was unexpected for the model not to have any missing values in the data needed for training the model. 
-* Another unexpected thing was for the model to produce the Women to Men AIR it did both in the validation and test data. Because of this, we can see that human minds already have certain notions that may affect the machine algorithm and lead to bias and discrimination.
+* It was unexpected for the model not to have any missing values in the data needed for training the model. Another unexpected thing was for the model to produce the Women to Men AIR it did both in the validation and test data. Because of this, we can see that human minds already have certain notions that may affect the machine algorithm and lead to bias and discrimination.
 
